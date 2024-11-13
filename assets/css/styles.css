@@ -1,0 +1,95 @@
+/* Comment */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  /* FLEX */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  /* SIZE */
+  width: 100%;
+  height: 100dvh;
+
+  /* BACKGROUND */
+  background: linear-gradient(
+    to right top, 
+    #9e65df, 
+    #ff6600, 
+    #ebd86c);
+}
+
+.card {
+  position: relative;
+
+  /* SIZE */
+  width: 600px;
+  height: 400px;
+
+  /* APPERANCE */
+  border-radius: 2rem; /* 16px * 2 = 32px */
+  border: 1px solid white;
+  background: linear-gradient(
+    to right bottom,
+    rgba(255, 255, 255, 0.7),
+    rgba(255, 255, 255, 0.3)
+  );
+
+  /* BLUR EFFECT */
+  backdrop-filter: blur(1rem);
+}
+
+/* GLOBAL CARD CONTENT STYLING */
+.card-content {
+  position: absolute;
+  /* color: rgba(255, 255, 255, 0.8); */
+  color: #1c1c1c;
+  font-weight: bold;
+  letter-spacing: 2px;
+  /* text-shadow: 0 0 4px rgba(0, 0, 0, 0.2); */
+}
+
+.card .number {
+  font-size: 2.5rem;
+  left: 3rem; /* 48px */
+  bottom: 8rem; /* 128px */
+}
+
+.card .name {
+  left: 3rem;
+  bottom: 5rem;
+}
+
+.card .valid {
+  right: 3rem;
+  bottom: 5rem;
+}
+
+.card .logo {
+  top: 1.5rem;
+  right: 2rem;
+  font-size: 4rem;
+  text-shadow: none;
+}
+
+.circle {
+  position: absolute;
+  height: 12rem;
+  width: 12rem;
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 50%;
+}
+
+.circle-1 {
+  transform: translate(250px, -170px);
+}
+
+.circle-2 {
+  transform: translate(-250px, 170px);
+  background-color: #9e65df;
+}
